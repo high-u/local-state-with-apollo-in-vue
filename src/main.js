@@ -15,7 +15,8 @@ const client = new ApolloClient({
   clientState: {
     defaults,
     resolvers,
-    typeDefs
+    typeDefs,
+    connectToDevTools: true
   }
 })
 
