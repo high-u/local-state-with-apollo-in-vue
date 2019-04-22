@@ -1,6 +1,4 @@
-# test-project
-
-> A Vue.js project
+# Migrate to Apollo Clinet 2.5 (Local state management)
 
 ## Build Setup
 
