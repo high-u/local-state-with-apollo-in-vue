@@ -16,7 +16,7 @@
 </template>
 
 <script>
-import { gql } from 'apollo-boost'
+import gql from "graphql-tag"
 
 const ADD_TODO = gql`
   mutation addTodo($todo: String!) {

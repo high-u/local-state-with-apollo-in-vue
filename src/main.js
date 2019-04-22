@@ -7,17 +7,23 @@
 
 import Vue from 'vue'
 import App from './App'
-import ApolloClient from 'apollo-boost'
 import VueApollo from 'vue-apollo'
 import { resolvers, defaults, typeDefs } from './resolvers'
+import { ApolloClient } from 'apollo-client'
+import { InMemoryCache } from 'apollo-cache-inmemory'
+
+const cache = new InMemoryCache()
 
 const client = new ApolloClient({
-  clientState: {
-    defaults,
-    resolvers,
-    typeDefs,
-    connectToDevTools: true
-  }
+  cache,
+  resolvers,
+  typeDefs,
+})
+
+cache.writeData({
+  data: {
+    todos: [],
+  },
 })
 
 const apolloProvider = new VueApollo({

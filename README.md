@@ -1,5 +1,10 @@
 # Migrate to Apollo Clinet 2.5 (Local state management)
 
+## I'm using this as reference
+
+* [Migrating from apollo-link-state](https://www.apollographql.com/docs/react/essentials/local-state#migrating)
+* [Apollo Boost migration - Apollo Docs](https://www.apollographql.com/docs/react/advanced/boost-migration)
+
 ## Build Setup
 
 ``` bash

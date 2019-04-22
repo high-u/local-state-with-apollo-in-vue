@@ -1,4 +1,4 @@
-import { gql } from 'apollo-boost'
+import gql from "graphql-tag"
 import RandomID from 'random-id'
 
 import TodosList from './components/TodosList'

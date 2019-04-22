@@ -5,7 +5,7 @@
     :variables= "{ id: todo.id }"
   >
     <input
-      slot-scope="{mutate, loading}"
+      slot-scope="{mutate}"
       type="checkbox"
       :id="todo.id"
       v-model="todo.completed"
@@ -14,7 +14,7 @@
   </ApolloMutation>
 </template>
 <script>
-import { gql } from "apollo-boost"
+import gql from "graphql-tag"
 
 export default {
   name: 'CompleteTodoCheckbox',

@@ -16,7 +16,7 @@
 </template>
 
 <script>
-import { gql } from "apollo-boost"
+import gql from "graphql-tag"
 import TodosList from './TodosList'
 
 const getTodos = TodosList.queries.getTodos

@@ -15,7 +15,7 @@
 </template>
 
 <script>
-import { gql } from 'apollo-boost'
+import gql from "graphql-tag"
 import Todo from './Todo'
 
 export default {
